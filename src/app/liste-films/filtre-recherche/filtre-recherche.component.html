@@ -1,0 +1,30 @@
+<div class="filtre-container">
+  <form>
+    <div class="input-container">
+      <input
+        class="small-margin"
+        type="text"
+        [(ngModel)]="filtreRecherche.title"
+        placeholder="Titre"
+        name="titre"/>
+      <input
+        class="small-margin"
+        type="number"
+        [(ngModel)]="filtreRecherche.startYear"
+        placeholder="Année"
+        mask="0000"
+        name="annee"/>
+    </div>
+
+    <div>
+      <button   class="small-margin" type="reset" (click)="reset()">
+        <span>TOUT EFFACER</span>
+        <i class="ion-md-close close-icon"></i>
+      </button>
+      <button   class="small-margin" type="submit" (click)="filtrer()">
+        <span>FILTRER</span>
+        <i class="ion-md-refresh refresh-icon"></i>
+      </button>
+    </div>
+  </form>
+</div>

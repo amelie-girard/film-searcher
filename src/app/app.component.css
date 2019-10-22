@@ -1,0 +1,13 @@
+h1 {
+  color: azure;
+  font-family: "Calibri Light";
+}
+
+app-liste-films {
+  margin-left: 25vw;
+  width: 50vw;
+  height: 80vh;
+  display: block;
+  position: relative;
+}
+

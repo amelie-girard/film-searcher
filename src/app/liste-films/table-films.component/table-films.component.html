@@ -1,0 +1,18 @@
+<table class="table-border">
+  <thead>
+  <tr>
+    <th>Titre</th>
+    <th>Année</th>
+    <th>Genre</th>
+  </tr>
+  </thead>
+
+  <tbody >
+
+    <tr *ngFor="let film of listFilms | filmFilter:listeParam" (click)="openEditModal(film)">
+      <td class="cell">{{film.originalTitle}}</td>
+      <td class="cell">{{film.startYear}}</td>
+      <td class="cell">{{displayGenre(film.genres)}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,23 @@
+.modal-container{
+  width: 25vw;
+  height: auto;
+  background-color: indianred;
+  border: 1px solid #CCC;
+  position: fixed;
+  top: 10vw;
+  left: 37.5vw;
+  z-index: 1000005;
+  text-align: center;
+}
+input{
+  height: 5em;
+}
+p {
+  text-align: center;
+}
+.button-container{
+  text-align: center;
+}
+button {
+  margin: 5%;
+}

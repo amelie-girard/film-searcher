@@ -1,0 +1,14 @@
+.filtre-container{
+  width: 30vw;
+  height: 10vh;
+  text-align: center;
+  margin: auto;
+}
+
+.input-container{
+  margin-bottom: 2vh;
+}
+
+.small-margin{
+  margin: 5px;
+}

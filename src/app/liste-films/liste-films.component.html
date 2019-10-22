@@ -1,0 +1,27 @@
+<div class="gif-container">
+  <iframe
+    *ngIf="chargement"
+    src="https://giphy.com/embed/y1ZBcOGOOtlpC"
+    width="480"
+    height="480"
+    frameBorder="0"
+    class="giphy-embed"
+    allowFullScreen></iframe>
+</div>
+<div
+  *ngIf="!chargement"
+  class="table-container">
+  <h2>Voici la liste de vos films disponibles</h2>
+  <app-filtre-recherche
+    class="filtre"
+    (filtrerFilms)='onFiltrerFilm($event)'
+    (resetFiltre)="onResetFiltre($event)">
+  </app-filtre-recherche>
+  <app-table-films
+    [films]="listeFilmObservable$"
+    [listeParam]="listeParam">
+  </app-table-films>
+</div>
+
+
+
